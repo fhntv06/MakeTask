@@ -1,0 +1,62 @@
+/logs
+/tmp_files
+/log/*.log
+/tmp
+/.htaccess
+/*.htaccess
+/.htaccess*
+/web.config
+/*web.config
+*.log
+*.sql
+# исключаем из репозитория текстовые файлы, но оставляем robots.txt
+*.pdf
+*.txt
+!/robots.txt
+sitemap*.xml
+*.dt
+*.tar.gz
+*.gz
+*.tar
+*.bak
+*.old
+/*~
+*/_*
+/_*
+esia-test/*tmp
+# исключаем папки composer и webpack
+/composer.*
+!composer.json
+vendor/*
+node_modules/
+package-lock.json
+*.keep
+sassdoc
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+/assets/images/news_images/*
+
+# исключаем ВСЮ папку bitrix, но ниже настроим включение нужных папок
+# или используйте папку /local, чтобы полностью исключить папку bitrix
+/bitrix/*
+# включаем папку components, но исключаем components/bitrix
+!/bitrix/components
+/bitrix/components/bitrix/
+# включаем папку php_interface и исключаем файл dbconn.php
+!/bitrix/php_interface/
+/bitrix/php_interface/include/*
+/bitrix/php_interface/*.bak
+/bitrix/php_interface/dbconn.php
+# включаем папку шаблонов
+!/bitrix/templates/
+/bitrix/templates/landing24
+
+# исключаем служебные и ненужные папки проекта
+upload/
+.idea
+.vscode
+.DS_Store
+robots.txt
+*.dia.autosave

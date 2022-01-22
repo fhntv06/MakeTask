@@ -1,0 +1,18 @@
+<div class="slider project-detail__slider" data-controller="slider" data-action="resize@window->slider#onResize">
+	<div class="slider__wrapper" data-target="slider.scrollingWrapper">
+		<div class="slider__slide" data-target="slider.slide">
+			<img alt="11.jpg" src="/upload/medialibrary/4f1/4f1e6ef3324ea69cc655cd8d06af8004.jpg" title="11.jpg">
+			<div class="slider__description">описание слайдера 1</div> 
+		</div>
+		<div class="slider__slide" data-target="slider.slide">
+			<img alt="11.jpg" src="/upload/medialibrary/4f1/4f1e6ef3324ea69cc655cd8d06af8004.jpg" title="11.jpg">
+			<div class="slider__description">описание слайдера 2</div>
+		</div>
+	</div>
+	<button class="slider__prev hidden" data-target="slider.prev" data-action="slider#toggle">
+		<svg class="icon" role="img"><use xlink:href="/public/webpack/icons.svg#dropdown-arrow"/></svg>
+	</button>
+	<button class="slider__next" data-target="slider.next" data-action="slider#toggle">
+		<svg class="icon" role="img"><use xlink:href="/public/webpack/icons.svg#dropdown-arrow"/></svg>
+	</button>
+</div>

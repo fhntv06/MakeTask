@@ -1,0 +1,11 @@
+<blockquote class="blockquote" data-controller="polar-lights-masked" data-action="mousemove->polar-lights-masked#updateMaskPosition">
+  [ЦИТАТА]
+  <div class="person-info">
+    <img class="person-info__photo" src="[ССЫЛКА НА ФОТО]" alt="[НАЗВАНИЕ ФОТО]">
+    <div class="person-info__description">
+      <span class="person-info__name">[ФИО]</span>
+      <span class="person-info__position">[ДОЛЖНОСТЬ]</span>
+    </div>
+  </div>
+  <div class="polar-lights polar-lights--dim" data-action="mousemove->polar-lights-masked#updateMaskPosition" style="filter: hue-rotate(5deg);"><div class="polar-lights__mask" data-target="polar-lights-masked.mask" style="-webkit-mask-position: 335.599px 162px;"></div></div>
+</blockquote>

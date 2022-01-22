@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Производственная", 
+		"/fabrika/proizvodstvennaya.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Офисная", 
+		"/fabrika/ofisnaya.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Профильная", 
+		"/fabrika/profilnaya.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
