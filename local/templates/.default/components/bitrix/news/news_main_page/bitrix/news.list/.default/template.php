@@ -46,49 +46,49 @@
 
                     // Проверка условия для появления "главной" новости на "главной" странице 
                     if($valueMainNews === "Y" && $valueShowMainNews === "Y"){
-            ?>
-					<article class="news-important" style="background-image: url(<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>)">
-						<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-							<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="news-important__link">
-								<h2 class="news-important__title">
-									<?echo $arItem["NAME"]?>
-								</h2>
-							</a>
-						<?endif;?>
-						<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
-							<time class="news-important__publication-date" datetime="<?echo $arItem["DISPLAY_ACTIVE_FROM"]?>">
-								<?echo $arItem["DISPLAY_ACTIVE_FROM"]?>
-						</time>
-						<?endif?>
-					</article>
-			<?php
+                ?>
+                        <article class="news-important" style="background-image: url(<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>)">
+                            <?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
+                                <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="news-important__link">
+                                    <h2 class="news-important__title">
+                                        <?echo $arItem["NAME"]?>
+                                    </h2>
+                                </a>
+                            <?endif;?>
+                            <?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
+                                <time class="news-important__publication-date" datetime="<?echo $arItem["DISPLAY_ACTIVE_FROM"]?>">
+                                    <?echo $arItem["DISPLAY_ACTIVE_FROM"]?>
+                            </time>
+                            <?endif?>
+                        </article>
+			    <?php
 					}
 
-				// Проверка условия для появления новостей на "главной" странице 
-				if($valueMainNews !== "Y" && $valueShowMainNews === "Y"){
-			?>
-                <article class="news">
-                    <?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="news__link">
-                            <h4 class="news__title">
-                                <?echo $arItem["NAME"]?>
-                            </h4>
-                        </a>
-                    <?endif;?>
-                    <div class="news__illustration" style="background-image: url(<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"></div>
-                        <div class="news__publication-info">
-                            <?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
-                                <time class="news__publication-date" datetime="<?echo $arItem["DISPLAY_ACTIVE_FROM"]?>">
-                                    <?echo $arItem["DISPLAY_ACTIVE_FROM"]?>
-                                </time>
-                            <?endif?>
-                        </div>
-                </article>
-	  		<?php
-				}
-			}
+                    // Проверка условия для появления новостей на "главной" странице 
+                    if($valueMainNews !== "Y" && $valueShowMainNews === "Y"){
+			    ?>
+                        <article class="news">
+                            <?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
+                                <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="news__link">
+                                    <h4 class="news__title">
+                                        <?echo $arItem["NAME"]?>
+                                    </h4>
+                                </a>
+                            <?endif;?>
+                            <div class="news__illustration" style="background-image: url(<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"></div>
+                                <div class="news__publication-info">
+                                    <?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
+                                        <time class="news__publication-date" datetime="<?echo $arItem["DISPLAY_ACTIVE_FROM"]?>">
+                                            <?echo $arItem["DISPLAY_ACTIVE_FROM"]?>
+                                        </time>
+                                    <?endif?>
+                                </div>
+                        </article>
+            <?php
+				    }
+			    }
 
-			?>  
+            ?>  
             </div>
         </section>
     </div>
