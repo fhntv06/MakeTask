@@ -29,7 +29,7 @@ $this->setFrameMode(true);
         /* Код для вывода "главной новости" */
 
         // ID блока 
-        $idBlockNovosti = 18;
+        $idBlockNovosti = $arResult["ID"];
         // Массив значений полей свойств MAIN_NEWS блока
         $VALUE= array();
         // Цикл перебора лементов блока и формирование массива значений поля свойства MAIN_NEWS
